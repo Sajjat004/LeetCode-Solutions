@@ -1,3 +1,4 @@
+// Challange Date: 07 Sep, 2024
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -43,9 +44,11 @@ public:
     queue<TreeNode*> q;
     q.push(root);
 
-    while (q.empty()) {
+    while (!q.empty()) {
       TreeNode* r = q.front();
       q.pop();
+
+      cout << r << endl;
 
       if (dfs(r, head)) return true;
       
