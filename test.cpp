@@ -1,60 +1,82 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
+#include <bits/stdc++.h>
+using namespace std;
 
-class Solution {
-  ListNode*  setMatrix(int x1, int x2, int y1, int y2, vector<vector<int>>& matrix, ListNode* head) {
-    // up side assign
-    for (int j = y1; j <= y2; ++j) {
-      if (head == NULL) return head;
-      matrix[x1][j] = head->val;
-      head = head->next;
-    }
-    // right side assign
-    for (int i = x1 + 1; i < x2; ++i) {
-      if (head == NULL) return head;
-      matrix[i][y2] = head->val;
-      head = head->next;
-    }
-    // dowun side assign
-    for (int j = y2; j >= y1; --j) {
-      if (head == NULL) return head;
-      matrix[x2][j] = head->val;
-      head = head->next;
-    }
-    // left side assign
-    for (int i = x2 - 1; i > x1; --i) {
-      if (head == NULL) return head;
-      matrix[i][y1] = head->val;
-      head = head->next;
+using ll = long long;
+
+ll getMaxCoins() {
+  int n; cin >> n;
+  vector<int> a(n);
+  for (int i = 0; i < n; i++) cin >> a[i];
+
+  vector<ll> segment;
+  vector<bool> segmentType;
+  segment.push_back(0LL);
+  segmentType.push_back(false);
+
+  int index = 0;
+  while (index < n) {
+    int start = index;
+
+    ll sum = 0;
+    while (start < n) {
+      if (a[start] < 0 and a[index] < 0) {
+        sum += abs(a[start]);
+      } else if (a[start] >= 0 and a[index] >= 0) {
+        sum += a[start];
+      } else {
+        break;
+      }
+      start++;
     }
 
-    return head;
+    segment.push_back(sum);
+    segmentType.push_back(a[index] > 0);
+    index = start;
   }
 
-public:
-    vector<vector<int>> spiralMatrix(int m, int n, ListNode* head) {
-      vector<vector<int>> matrix(m, vector<int>(n, -1));
+  int m = segment.size();
+  vector<vector<ll>> prefixSum(m + 2, vector<ll>(2, 0));
+  vector<vector<ll>> sufixSum(m + 2, vector<ll>(2, 0));
 
-      int x1 = 0, x2 = m - 1;
-      int y1 = 0, y2 = n - 1;
-
-      while (x1 <= x2 and y1 <= y2) {
-        head = setMatrix(x1, x2, y1, y2, matrix, head);
-        x1 += 1;
-        x2 -= 1;
-        y1 += 1;
-        y2 -= 1;
-
-      }
-
-      return matrix;
+  for (int i = 1; i < m; i++) {
+    prefixSum[i][0] = prefixSum[i - 1][0];
+    prefixSum[i][1] = prefixSum[i - 1][1];
+    if (segmentType[i]) {
+      prefixSum[i][1] += segment[i];
+    } else {
+      prefixSum[i][0] += segment[i];
     }
-};
+  }
+
+  for (int i = m - 1; i >= 1; i--) {
+    sufixSum[i][0] = sufixSum[i + 1][0];
+    sufixSum[i][1] = sufixSum[i + 1][1];
+    if (segmentType[i]) {
+      sufixSum[i][1] += segment[i];
+    } else {
+      sufixSum[i][0] += segment[i];
+    }
+  }
+
+  ll ans = 0LL;
+  for (int i = 1; i < m; ++i) {
+    if (segmentType[i]) {
+      ans = max(ans, prefixSum[i][1] + sufixSum[i + 1][0]);
+    } else {
+      ans = max(ans, sufixSum[i][0] + prefixSum[i - 1][1]);
+    }
+  }
+
+  return ans;
+}
+
+int32_t main() {
+  ios_base::sync_with_stdio(false); cin.tie(0);
+
+  int test; cin >> test;
+  while (test--) {
+    cout << getMaxCoins() << '\n';
+  }
+    
+  return 0;
+}
