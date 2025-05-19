@@ -1,10 +1,10 @@
-## Leedcode Solution
+# LeedCode Solutions
 
 > 🎯 Break Your Limits  
 > *"Dream big. Code smart. Win consistently."*
 
 
-## 📅 Leetcode Daily Challenge Solution - May 2025
+### 📅 Leetcode Daily Challenge Solution - May 2025
 
 | Sun | Mon | Tue | Wed | Thu | Fri | Sat |
 |-----|-----|-----|-----|-----|-----|-----|
@@ -14,7 +14,7 @@
 | 18  | 19  | 20  | 21  | 22  | 23  | 24  |
 | 25  | 26  | 27  | 28  | 29  | 30  | 31  |
 
-## 📅 Leetcode Daily Challenge Solution - May 2025
+### 📅 Leetcode Daily Challenge Solution - May 2025
 
 | Sun | Mon | Tue | Wed | Thu | Fri | Sat |
 |-----|-----|-----|-----|-----|-----|-----|
