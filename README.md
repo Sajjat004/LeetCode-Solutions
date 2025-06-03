@@ -3,6 +3,16 @@
 > 🎯 Break Your Limits  
 > *"Dream big. Code smart. Win consistently."*
 
+### 📅 Leetcode Daily Challenge Solution - June 2025
+
+| Sun | Mon | Tue | Wed | Thu | Fri | Sat |
+|-----|-----|-----|-----|-----|-----|-----|
+| 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| 8   | 9   | 10  | 11  | 12  | 13  | 14  |
+| 15  | 16  | 17  | 18  | 19  | 20  | 21  |
+| 22  | 23  | 24  | 25  | 26  | 27  | 28  |
+| 29  | 30  |     |     |     |     |     |
+
 
 ### 📅 Leetcode Daily Challenge Solution - May 2025
 
@@ -12,7 +22,7 @@
 | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
 | 11  | 12  | 13  | 14  | 15  | 16  | 17  |
 | 18  | [19](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Type%20of%20Triangle.cpp)  | [20](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Zero%20Array%20Transformation%20I.cpp)  | [21](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Set%20Matrix%20Zeroes.cpp)  | [22](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Zero%20Array%20Transformation%20III.cpp)  | [23](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Find%20the%20Maximum%20Sum%20of%20Node%20Values.cpp)  | [24](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Find%20Words%20Containing%20Character.cpp)  |
-| [25](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Longest%20Palindrome%20by%20Concatenating%20Two%20Letter%20Words.cpp)  | [26](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Largest%20Color%20Value%20in%20a%20Directed%20Graph.cpp)  | [27](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Divisible%20and%20Non-divisible%20Sums%20Difference.cpp)  | [28](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Maximize%20the%20Number%20of%20Target%20Nodes%20After%20Connecting%20Trees%20I.cpp)  | [29](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Maximize%20the%20Number%20of%20Target%20Nodes%20After%20Connecting%20Trees%20II.cpp)  | 30  | 31  |
+| [25](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Longest%20Palindrome%20by%20Concatenating%20Two%20Letter%20Words.cpp)  | [26](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Largest%20Color%20Value%20in%20a%20Directed%20Graph.cpp)  | [27](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Divisible%20and%20Non-divisible%20Sums%20Difference.cpp)  | [28](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Maximize%20the%20Number%20of%20Target%20Nodes%20After%20Connecting%20Trees%20I.cpp)  | [29](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Maximize%20the%20Number%20of%20Target%20Nodes%20After%20Connecting%20Trees%20II.cpp)  | [30](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Find%20Closest%20Node%20to%20Given%20Two%20Nodes.cpp)  | [31](https://github.com/Sajjat004/LeetCode-Solutions/blob/main/Daily%20Challenge/May%202025/Snakes%20and%20Ladders.cpp)  |
 
 ### 📅 Leetcode Daily Challenge Solution - May 2025
 
