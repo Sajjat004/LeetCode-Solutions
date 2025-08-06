@@ -10,7 +10,7 @@ public:
     for (int i = 0; i < n; ++i) {
       if (i >= 2 && s[i] == s[i - 1] && s[i] == s[i - 2]) {
         continue;
-      }
+      }Maximum Erasure Value
       result.push_back(s[i]);
     }
     

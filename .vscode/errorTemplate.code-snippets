@@ -1,8 +1,8 @@
 {
 	"Debugger": {
-  "prefix": "debugger",
+  "prefix": "errorTemplate",
   "body": [
-    "#define error(...) __f(#__VA_ARGS__, __VA_ARGS__)",
+    "#define debug(...) __f(#__VA_ARGS__, __VA_ARGS__)",
     "template <typename Arg1>",
     "void __f(const char* name, Arg1&& arg1) {",
     "  cout << name << \" = \" << arg1 << '\\n';",
