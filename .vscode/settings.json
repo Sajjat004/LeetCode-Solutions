@@ -1,16 +1,4 @@
 {
-  "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
-  "editor.tabSize": 2,
+  // "editor.fontSize": 16,
   "files.autoSave": "afterDelay",
-  "editor.fontFamily": "Operator Mono Lig Light, Fira Code Light, Consolas, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 17,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.wordWrap": "on",
-  // cursor
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorBlinking": "expand",
-  // terminal
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontFamily": "Operator Mono Lig Light, Fira Code Light, Consolas, 'Courier New', monospace"
 }
